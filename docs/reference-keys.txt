@@ -1,6 +1,13 @@
-about
-usage
-render-book
-preview-book
+data-science-and-project-management-basics
+schools
+waterfall
+short-analytical-plan-with-waterfall
+agile
+who
+meeting-structures-ceremonies
+record-keeping-and-documentation
+understanding-the-problem
+iteration
+flavours
 hello-bookdown
 a-section
