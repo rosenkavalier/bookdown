@@ -1,7 +1,5 @@
 --- 
-title:     | 
-    | Data Science Project Management
-    | Adapting PM methodologies
+title: Data Science Project Management
 author: "Kian Chapman-Raafat"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
