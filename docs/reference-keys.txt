@@ -9,5 +9,13 @@ record-keeping-and-documentation
 understanding-the-problem
 iteration
 flavours
-hello-bookdown
-a-section
+agile-adaptations
+start-stupid---mvp
+you-dont-always-get-to-choose-your-team
+do-some-rd-upfront
+meet-the-players
+mixing-scrum-and-kanban
+writing-jiraboard-tickets-can-be-an-art
+splitting-tasks
+take-the-burden-off-show-and-tell-meetings
+too-many-hats

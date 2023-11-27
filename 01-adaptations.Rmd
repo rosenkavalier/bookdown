@@ -1,0 +1,80 @@
+# Agile adaptations
+It is widely recognized that Agile is a better fit than waterfall for data science, but no one Agile methodology works perfectly: picking and choosing the best bits for your team is preferable. Some things that have worked well for me in the past are:
+
+## Start stupid - MVP
+Minimal viable product (MVP) is a concept from Agile that I love. An MVP is the simplest/stupidest solution to building something, or meeting a project brief before you go deeper and improve your work. For data science this nearly always means starting with a very unexciting and uninspiring solution, however this can be the best place to start. Explain the concept of MVP to your customers so they know to expect a very unpolished piece of work, and then let them see it. By sharing a basic but complete product you may find the needs of your company are less/different than you or your customer thought, and can avoid wasting a lot of time and effort reaching perfection on something unfit or too complex for real needs. 
+
+The principle can be used for each stage of the data science process as well as the overall product. In practice this might mean facing a prediction problem with a smaller dataset before adding new variables or customer groups, starting with a simple model before a more elaborate one, loosely tuning a model before focusing on great scores, or building a quick and ugly dashboard before a beautiful one. When I am upgrading part of my work I call it MVP + n (however many improvement iterations you are on).
+
+## You don’t always get to choose your team
+
+I have been through many different configurations of multi-disciplinary teams and there is no one configuration across the industry. There are a few players I think you need to have, and if you can’t get them formally then you should try to find them informally:  
+1. The **person/people to do the work**!   
+2. A **product owner**: unless you are working on purely experimental R&D, you need someone to want the output of your work, and to be willing to offer their time regularly to discuss it. Without this role, you risk building something amazing that nobody has time for or perhaps works counter to their aims. If you both share the objective of project success then both sides reap the rewards and it gives visibility to your work.  
+3. A **delivery manager** or person to hold you accountable: without this role, accountability can slip. As humans, we all make decisions for a reason, but inviting challenge should encourage you to make better and more justifiable decisions. Likewise, if work is behind, an external influence can be good to remind you what is important and set you back on the right track. If there is no formal role for this in your team, ask your boss or a more senior colleague if they would be willing to meet weekly or fortnightly to get to know your work and share their critical opinions. It can be uncomfortable but the more critical they can be, the better your work can be.
+
+
+## Do some R&D upfront 
+A useful concept across Agile frameworks is starting a project with a discovery stage and it can be a great way to start on the right track. “Discovery” is a term used to describe an introductory phase of a project focusing on aligning expectations, exploring assumptions and agreeing on goals and scope.^[https://aginic.com/blog/agile-discovery-phase-the-ultimate-guide/]  
+
+For me in data science this means dedicating an appropriate amount of time depending on the size and complexity of your work (usually between two days and two weeks) to explore the area as a team to:  
+
+* Agree on the purpose of the work.  
+* Identify data sources you are going to need and start looking into access.  
+* Discuss and choose which technologies are going to be needed, and talk to a data engineer if you can.  
+* Explore how others have solved your problem in the past across your business and others.  
+* Do an academic search of the most promising models/techniques and the metrics that are important for them.  
+* Explore any open questions for the project, especially those that might be deal breakers (i.e. can we legally/ethically do this work, can we deploy, which models are suitable for scaling, is there any other work we should be waiting for).  
+* Consider project risks, mitigations, and stakeholders.  
+
+Data science is a broad and fast-moving field, and it is common to work on completely different parts of the field from project to project. The Discovery period is great to bring everyone onto the same page and freshen up knowledge in the area and it's important to share your learning from this phase together. This work should save time later and ensure that the project is heading in the right direction. It isn’t a natural fit for Jira cards, but try and keep a shared area/document with all of your learning, as no doubt you will need to dip back in to remind yourself why you made a choice. It’s not impossible that during this stage you might also ‘discover’ that your project isn’t a good idea. As sad as this may be it’s better to know after two days of work rather than six months, so embrace it.
+
+## Meet the players
+A kick-off meeting with your team during the discovery stage is the perfect time to learn from the rest of your team’s past experiences and set expectations that everyone can agree on going forward. A kick-off meeting should be a casual discussion about what practices people have loved or hated in previous teams and how they would like to try it this time around. It can cover issues such as work styles, meeting timings and managing Quality Assurance (QA) and Pull Requests (PRs). It means that the whole team reaches an agreement together about how they want to work. I have no prescriptions about what your team should agree on, but a few of the things previous project teams have opted for include:  
+
+* A limit on substantial changes in a single PR (approx 300 lines), and a timeline for another team member to take on and check the PR (24 hours).  
+* What languages/packages/libraries/frameworks match the project's needs and the team's previous experiences with them.  
+* Keeping standups short, but adding a weekly ‘I need advice’ session (or the opposite with long standups as the main touch point).  
+* Whether to work in defined blocks of time known as ‘Sprints’ (from Scrum) and how long the sprints should be, I favour two weeks. Alternatively, work in Kanban style and arrange your work blocks by the overarching task to be done - i.e. exploratory data analysis.  
+* How to label the size of jobs to be done (there are lots of fun options here i.e. XS = time to drink a coffee)
+
+## Mixing Scrum and Kanban
+As mentioned above, in Scrum, you aim to complete and deliver some complete version of your product in a strict time-boxed sprint, while in Kanban you focus on organizing work around a central task. I tend to use a hybrid approach given that data science work often needs longer than a two-week sprint to deliver a whole ‘something’. Similarly, if we use pure Kanban and are working on ‘model tuning’, there is nothing to guide us on when to stop or to remind us how long is too long to continue tuning.  
+
+I prefer to borrow from both. I will pick a work theme, such as 'model improvement', then look at the steps I want to complete under that heading and estimate how long it should take. I can then split the overall theme in to smaller objectives and dedicate a sprint to each of the smaller objectives.  
+
+The benefits are that it keeps work flexible, it has built in stop points after each sprint where I can readjust the plan depending on blockers, but still provides soft deadlines to motivate work.
+
+
+## Writing Jira/board tickets can be an art
+
+A common system to keep track of what needs to be done, and who is working on it, is Jira. If you haven't seen it before, here is an [introduction video](https://wac-cdn-2.atlassian.com/video/upload/f_auto,q_auto/misc-assets/videos/jira-software/JSW-Plan.mp4) from the Jira team. Jira lets you build project boards and write a ticket for each to-do task. Team members can then be assigned to these tickets, and mark them as complete when they are done. 
+
+In Jira you can use preset board headings or columns headers. Headings I like to use are:  
+
+1. **Backlog:** jobs that we know we need to do in the future but aren’t part of the current sprint/work phase.
+2. **To do:** tasks that are ready for progress to start.  
+3. **In progress:** someone has claimed the job and has started work on it.
+4. **QA:** a place to move a task when you want another team member to check your work. If substantial rework is needed you can pull this back into to do or make a new card for the work.
+5. **Discuss/Blocked/Help:** a place for people to mark work that needs an extra something to progress. 
+6. **Done:** passed QA, nothing more to do.
+
+Tasks should move from left to right (except for blocked), and there are ways to highlight priority such as ordering within a column or adding critical markers.   
+
+### Splitting tasks
+
+Splitting the week’s work into small tasks that can be taken on by a single team member can be tricky - how do you split exploratory data analysis into work for three data scientists and make sure everyone always has something they can do?  
+I have seen some teams split the job by variables (i.e. “I will take internal data sources, you can take external ones”), while others split it by stages (i.e.” I will do outlier removal, you can handle missing data”). There are clear advantages to both, in the former the team member will become an expert on their data points, and in the later approaches taken will be consistent across variables. I have never seen it done in a good way to hit both ideals, and would love to hear alternatives and the way you do this in your team.  
+
+
+## Take the burden off show-and-tell meetings 
+Show-and-tell meetings are important to catch domain-specific knowledge from your stakeholers and validate your work so far. It can be tempting to reschedule these meetings until you have a whole ‘thing’ to show, but in data science our project might not have such obvious end points. Putting off meetings when progress has been slow could mean we miss answers to our questions that our customers hold. I recommend keeping a regular meeting in the diary with a friendly, working level stakeholder and committing to these meetings even if progress is less than you hoped. 
+
+One of my colleagues^[Cloudy Carnegie, thank you!] had a great way to take the stress out of preparing for these meetings. She kept a live ‘update slide pack’ which was added to from day one of the project until the end. It was a space where team members could drop in important things they have done and learnt during the week, building loose documentation as you go. It is useful to have this pack to go back to check timelines, decision justification, and meant when it was time to present to stakeholders, that all the material was already there and just needed a bit of cleaning up. This avoids a frantic team effort to pull material together at short notice and means you always have some material (nearly) ready to go.
+
+## Too many hats
+For the project lead who does a little of everything I would recommend separating your roles mentally to help you prioritize. My order of priority is usually:   
+
+1. **Planning**/organization/preparation meetings - no one else has responsibility for these (unless you delegate parts) so it makes sense to put your focus here.
+2. Removing whatever **blockers** there are - working to get the answers the team needs to proceed, or clearing up the PRs that are clogging progress is nearly equally high on priorities unless you want your project to slow to a crawl.
+3. Take an **easy ticket** - I enjoy the opportunity to keep coding, but given this is a lower priority on my list I am careful not to take a card that is overly ambitious for the time I have. If I get caught up in meetings or ad-hoc issues crop up, the work I had started could easily go stale and become a blocker. As a default, I will take a small task, or if I plan to take a bigger task then it has to be taken with intention - i.e. clear diary time to work on it.

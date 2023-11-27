@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Agile adaptations | Data Science Project Management</title>
+  <meta name="description" content="A short introduction to project planning methods in data science." />
+  <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Agile adaptations | Data Science Project Management" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="A short introduction to project planning methods in data science." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Agile adaptations | Data Science Project Management" />
+  
+  <meta name="twitter:description" content="A short introduction to project planning methods in data science." />
+  
+
+<meta name="author" content="Kian Chapman-Raafat" />
+
+
+<meta name="date" content="2023-11-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Data science and project management basics</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#schools"><i class="fa fa-check"></i><b>1.1</b> PM schools of thought</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#waterfall"><i class="fa fa-check"></i><b>1.2</b> Waterfall</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#short-analytical-plan-with-waterfall"><i class="fa fa-check"></i><b>1.2.1</b> Short analytical plan with waterfall</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#agile"><i class="fa fa-check"></i><b>1.3</b> Agile</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#who"><i class="fa fa-check"></i><b>1.3.1</b> Who</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#meeting-structures-ceremonies"><i class="fa fa-check"></i><b>1.3.2</b> Meeting structures (ceremonies)</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="index.html#record-keeping-and-documentation"><i class="fa fa-check"></i><b>1.3.3</b> Record keeping and documentation</a></li>
+<li class="chapter" data-level="1.3.4" data-path="index.html"><a href="index.html#understanding-the-problem"><i class="fa fa-check"></i><b>1.3.4</b> Understanding the problem</a></li>
+<li class="chapter" data-level="1.3.5" data-path="index.html"><a href="index.html#iteration"><i class="fa fa-check"></i><b>1.3.5</b> Iteration</a></li>
+<li class="chapter" data-level="1.3.6" data-path="index.html"><a href="index.html#flavours"><i class="fa fa-check"></i><b>1.3.6</b> Differences in Agile flavours</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="agile-adaptations.html"><a href="agile-adaptations.html"><i class="fa fa-check"></i><b>2</b> Agile adaptations</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="agile-adaptations.html"><a href="agile-adaptations.html#start-stupid---mvp"><i class="fa fa-check"></i><b>2.1</b> Start stupid - MVP</a></li>
+<li class="chapter" data-level="2.2" data-path="agile-adaptations.html"><a href="agile-adaptations.html#you-dont-always-get-to-choose-your-team"><i class="fa fa-check"></i><b>2.2</b> You don’t always get to choose your team</a></li>
+<li class="chapter" data-level="2.3" data-path="agile-adaptations.html"><a href="agile-adaptations.html#do-some-rd-upfront"><i class="fa fa-check"></i><b>2.3</b> Do some R&amp;D upfront</a></li>
+<li class="chapter" data-level="2.4" data-path="agile-adaptations.html"><a href="agile-adaptations.html#meet-the-players"><i class="fa fa-check"></i><b>2.4</b> Meet the players</a></li>
+<li class="chapter" data-level="2.5" data-path="agile-adaptations.html"><a href="agile-adaptations.html#mixing-scrum-and-kanban"><i class="fa fa-check"></i><b>2.5</b> Mixing Scrum and Kanban</a></li>
+<li class="chapter" data-level="2.6" data-path="agile-adaptations.html"><a href="agile-adaptations.html#writing-jiraboard-tickets-can-be-an-art"><i class="fa fa-check"></i><b>2.6</b> Writing Jira/board tickets can be an art</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="agile-adaptations.html"><a href="agile-adaptations.html#splitting-tasks"><i class="fa fa-check"></i><b>2.6.1</b> Splitting tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="agile-adaptations.html"><a href="agile-adaptations.html#take-the-burden-off-show-and-tell-meetings"><i class="fa fa-check"></i><b>2.7</b> Take the burden off show-and-tell meetings</a></li>
+<li class="chapter" data-level="2.8" data-path="agile-adaptations.html"><a href="agile-adaptations.html#too-many-hats"><i class="fa fa-check"></i><b>2.8</b> Too many hats</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science Project Management</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="agile-adaptations" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Agile adaptations<a href="agile-adaptations.html#agile-adaptations" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>It is widely recognized that Agile is a better fit than waterfall for data science, but no one Agile methodology works perfectly: picking and choosing the best bits for your team is preferable. Some things that have worked well for me in the past are:</p>
+<div id="start-stupid---mvp" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Start stupid - MVP<a href="agile-adaptations.html#start-stupid---mvp" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Minimal viable product (MVP) is a concept from Agile that I love. An MVP is the simplest/stupidest solution to building something, or meeting a project brief before you go deeper and improve your work. For data science this nearly always means starting with a very unexciting and uninspiring solution, however this can be the best place to start. Explain the concept of MVP to your customers so they know to expect a very unpolished piece of work, and then let them see it. By sharing a basic but complete product you may find the needs of your company are less/different than you or your customer thought, and can avoid wasting a lot of time and effort reaching perfection on something unfit or too complex for real needs.</p>
+<p>The principle can be used for each stage of the data science process as well as the overall product. In practice this might mean facing a prediction problem with a smaller dataset before adding new variables or customer groups, starting with a simple model before a more elaborate one, loosely tuning a model before focusing on great scores, or building a quick and ugly dashboard before a beautiful one. When I am upgrading part of my work I call it MVP + n (however many improvement iterations you are on).</p>
+</div>
+<div id="you-dont-always-get-to-choose-your-team" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> You don’t always get to choose your team<a href="agile-adaptations.html#you-dont-always-get-to-choose-your-team" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>I have been through many different configurations of multi-disciplinary teams and there is no one configuration across the industry. There are a few players I think you need to have, and if you can’t get them formally then you should try to find them informally:<br />
+1. The <strong>person/people to do the work</strong>!<br />
+2. A <strong>product owner</strong>: unless you are working on purely experimental R&amp;D, you need someone to want the output of your work, and to be willing to offer their time regularly to discuss it. Without this role, you risk building something amazing that nobody has time for or perhaps works counter to their aims. If you both share the objective of project success then both sides reap the rewards and it gives visibility to your work.<br />
+3. A <strong>delivery manager</strong> or person to hold you accountable: without this role, accountability can slip. As humans, we all make decisions for a reason, but inviting challenge should encourage you to make better and more justifiable decisions. Likewise, if work is behind, an external influence can be good to remind you what is important and set you back on the right track. If there is no formal role for this in your team, ask your boss or a more senior colleague if they would be willing to meet weekly or fortnightly to get to know your work and share their critical opinions. It can be uncomfortable but the more critical they can be, the better your work can be.</p>
+</div>
+<div id="do-some-rd-upfront" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Do some R&amp;D upfront<a href="agile-adaptations.html#do-some-rd-upfront" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A useful concept across Agile frameworks is starting a project with a discovery stage and it can be a great way to start on the right track. “Discovery” is a term used to describe an introductory phase of a project focusing on aligning expectations, exploring assumptions and agreeing on goals and scope.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>For me in data science this means dedicating an appropriate amount of time depending on the size and complexity of your work (usually between two days and two weeks) to explore the area as a team to:</p>
+<ul>
+<li>Agree on the purpose of the work.<br />
+</li>
+<li>Identify data sources you are going to need and start looking into access.<br />
+</li>
+<li>Discuss and choose which technologies are going to be needed, and talk to a data engineer if you can.<br />
+</li>
+<li>Explore how others have solved your problem in the past across your business and others.<br />
+</li>
+<li>Do an academic search of the most promising models/techniques and the metrics that are important for them.<br />
+</li>
+<li>Explore any open questions for the project, especially those that might be deal breakers (i.e. can we legally/ethically do this work, can we deploy, which models are suitable for scaling, is there any other work we should be waiting for).<br />
+</li>
+<li>Consider project risks, mitigations, and stakeholders.</li>
+</ul>
+<p>Data science is a broad and fast-moving field, and it is common to work on completely different parts of the field from project to project. The Discovery period is great to bring everyone onto the same page and freshen up knowledge in the area and it’s important to share your learning from this phase together. This work should save time later and ensure that the project is heading in the right direction. It isn’t a natural fit for Jira cards, but try and keep a shared area/document with all of your learning, as no doubt you will need to dip back in to remind yourself why you made a choice. It’s not impossible that during this stage you might also ‘discover’ that your project isn’t a good idea. As sad as this may be it’s better to know after two days of work rather than six months, so embrace it.</p>
+</div>
+<div id="meet-the-players" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Meet the players<a href="agile-adaptations.html#meet-the-players" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A kick-off meeting with your team during the discovery stage is the perfect time to learn from the rest of your team’s past experiences and set expectations that everyone can agree on going forward. A kick-off meeting should be a casual discussion about what practices people have loved or hated in previous teams and how they would like to try it this time around. It can cover issues such as work styles, meeting timings and managing Quality Assurance (QA) and Pull Requests (PRs). It means that the whole team reaches an agreement together about how they want to work. I have no prescriptions about what your team should agree on, but a few of the things previous project teams have opted for include:</p>
+<ul>
+<li>A limit on substantial changes in a single PR (approx 300 lines), and a timeline for another team member to take on and check the PR (24 hours).<br />
+</li>
+<li>What languages/packages/libraries/frameworks match the project’s needs and the team’s previous experiences with them.<br />
+</li>
+<li>Keeping standups short, but adding a weekly ‘I need advice’ session (or the opposite with long standups as the main touch point).<br />
+</li>
+<li>Whether to work in defined blocks of time known as ‘Sprints’ (from Scrum) and how long the sprints should be, I favour two weeks. Alternatively, work in Kanban style and arrange your work blocks by the overarching task to be done - i.e. exploratory data analysis.<br />
+</li>
+<li>How to label the size of jobs to be done (there are lots of fun options here i.e. XS = time to drink a coffee)</li>
+</ul>
+</div>
+<div id="mixing-scrum-and-kanban" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Mixing Scrum and Kanban<a href="agile-adaptations.html#mixing-scrum-and-kanban" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As mentioned above, in Scrum, you aim to complete and deliver some complete version of your product in a strict time-boxed sprint, while in Kanban you focus on organizing work around a central task. I tend to use a hybrid approach given that data science work often needs longer than a two-week sprint to deliver a whole ‘something’. Similarly, if we use pure Kanban and are working on ‘model tuning’, there is nothing to guide us on when to stop or to remind us how long is too long to continue tuning.</p>
+<p>I prefer to borrow from both. I will pick a work theme, such as ‘model improvement’, then look at the steps I want to complete under that heading and estimate how long it should take. I can then split the overall theme in to smaller objectives and dedicate a sprint to each of the smaller objectives.</p>
+<p>The benefits are that it keeps work flexible, it has built in stop points after each sprint where I can readjust the plan depending on blockers, but still provides soft deadlines to motivate work.</p>
+</div>
+<div id="writing-jiraboard-tickets-can-be-an-art" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Writing Jira/board tickets can be an art<a href="agile-adaptations.html#writing-jiraboard-tickets-can-be-an-art" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A common system to keep track of what needs to be done, and who is working on it, is Jira. If you haven’t seen it before, here is an <a href="https://wac-cdn-2.atlassian.com/video/upload/f_auto,q_auto/misc-assets/videos/jira-software/JSW-Plan.mp4">introduction video</a> from the Jira team. Jira lets you build project boards and write a ticket for each to-do task. Team members can then be assigned to these tickets, and mark them as complete when they are done.</p>
+<p>In Jira you can use preset board headings or columns headers. Headings I like to use are:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Backlog:</strong> jobs that we know we need to do in the future but aren’t part of the current sprint/work phase.</li>
+<li><strong>To do:</strong> tasks that are ready for progress to start.<br />
+</li>
+<li><strong>In progress:</strong> someone has claimed the job and has started work on it.</li>
+<li><strong>QA:</strong> a place to move a task when you want another team member to check your work. If substantial rework is needed you can pull this back into to do or make a new card for the work.</li>
+<li><strong>Discuss/Blocked/Help:</strong> a place for people to mark work that needs an extra something to progress.</li>
+<li><strong>Done:</strong> passed QA, nothing more to do.</li>
+</ol>
+<p>Tasks should move from left to right (except for blocked), and there are ways to highlight priority such as ordering within a column or adding critical markers.</p>
+<div id="splitting-tasks" class="section level3 hasAnchor" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span> Splitting tasks<a href="agile-adaptations.html#splitting-tasks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Splitting the week’s work into small tasks that can be taken on by a single team member can be tricky - how do you split exploratory data analysis into work for three data scientists and make sure everyone always has something they can do?<br />
+I have seen some teams split the job by variables (i.e. “I will take internal data sources, you can take external ones”), while others split it by stages (i.e.” I will do outlier removal, you can handle missing data”). There are clear advantages to both, in the former the team member will become an expert on their data points, and in the later approaches taken will be consistent across variables. I have never seen it done in a good way to hit both ideals, and would love to hear alternatives and the way you do this in your team.</p>
+</div>
+</div>
+<div id="take-the-burden-off-show-and-tell-meetings" class="section level2 hasAnchor" number="2.7">
+<h2><span class="header-section-number">2.7</span> Take the burden off show-and-tell meetings<a href="agile-adaptations.html#take-the-burden-off-show-and-tell-meetings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Show-and-tell meetings are important to catch domain-specific knowledge from your stakeholers and validate your work so far. It can be tempting to reschedule these meetings until you have a whole ‘thing’ to show, but in data science our project might not have such obvious end points. Putting off meetings when progress has been slow could mean we miss answers to our questions that our customers hold. I recommend keeping a regular meeting in the diary with a friendly, working level stakeholder and committing to these meetings even if progress is less than you hoped.</p>
+<p>One of my colleagues<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> had a great way to take the stress out of preparing for these meetings. She kept a live ‘update slide pack’ which was added to from day one of the project until the end. It was a space where team members could drop in important things they have done and learnt during the week, building loose documentation as you go. It is useful to have this pack to go back to check timelines, decision justification, and meant when it was time to present to stakeholders, that all the material was already there and just needed a bit of cleaning up. This avoids a frantic team effort to pull material together at short notice and means you always have some material (nearly) ready to go.</p>
+</div>
+<div id="too-many-hats" class="section level2 hasAnchor" number="2.8">
+<h2><span class="header-section-number">2.8</span> Too many hats<a href="agile-adaptations.html#too-many-hats" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For the project lead who does a little of everything I would recommend separating your roles mentally to help you prioritize. My order of priority is usually:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Planning</strong>/organization/preparation meetings - no one else has responsibility for these (unless you delegate parts) so it makes sense to put your focus here.</li>
+<li>Removing whatever <strong>blockers</strong> there are - working to get the answers the team needs to proceed, or clearing up the PRs that are clogging progress is nearly equally high on priorities unless you want your project to slow to a crawl.</li>
+<li>Take an <strong>easy ticket</strong> - I enjoy the opportunity to keep coding, but given this is a lower priority on my list I am careful not to take a card that is overly ambitious for the time I have. If I get caught up in meetings or ad-hoc issues crop up, the work I had started could easily go stale and become a blocker. As a default, I will take a small task, or if I plan to take a bigger task then it has to be taken with intention - i.e. clear diary time to work on it.</li>
+</ol>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p><a href="https://aginic.com/blog/agile-discovery-phase-the-ultimate-guide/" class="uri">https://aginic.com/blog/agile-discovery-phase-the-ultimate-guide/</a><a href="agile-adaptations.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Cloudy Carnegie, thank you!<a href="agile-adaptations.html#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-adaptations.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
