@@ -19,3 +19,7 @@ writing-jiraboard-tickets-can-be-an-art
 splitting-tasks
 take-the-burden-off-show-and-tell-meetings
 too-many-hats
+overall-framework
+my-way-of-working
+tiny-team-planning
+your-turn

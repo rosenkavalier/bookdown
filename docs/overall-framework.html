@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Data Science Project Management</title>
+  <title>Chapter 3 Overall framework | Data Science Project Management</title>
   <meta name="description" content="A short introduction to project planning methods in data science." />
   <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Data Science Project Management" />
+  <meta property="og:title" content="Chapter 3 Overall framework | Data Science Project Management" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A short introduction to project planning methods in data science." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Data Science Project Management" />
+  <meta name="twitter:title" content="Chapter 3 Overall framework | Data Science Project Management" />
   
   <meta name="twitter:description" content="A short introduction to project planning methods in data science." />
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="agile-adaptations.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -133,18 +133,70 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="overall-framework" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Overall framework<a href="overall-framework.html#overall-framework" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="my-way-of-working" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> My way of working<a href="overall-framework.html#my-way-of-working" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>So now we have lots of thoughts about how to run a data science project. How do they work together? My preferred framework is:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Project Ideation</strong>: A project is first mentioned or thought of by me/someone else. I consider it ideation the moment someone writes the idea down somewhere. This is now on your to-do list to look into in more depth.<br />
+</li>
+<li><strong>Mini-Discovery</strong>: The next stage is a brief investigation by 1 person to check that the project has an audience, data to support it, and makes sense. Write a project objective statement about the why, what and risks with this work.<br />
+</li>
+<li><strong>Work approval</strong>: Decide if it’s worth proceeding with. This could be decided by you if you are in a position to do so, or a senior colleague.</li>
+<li><strong>Team-Kick Off Meeting</strong>: Form a team with the skills you discovered you would need during the mini-discovery, and get to know them and their ways of working.<br />
+</li>
+<li><strong>Discovery Stage</strong>: A more legit discovery stage. See details in previous sections, but get to know your customers, the problem, and the landscape. Use this to build user stories or a requirements list so you know what success looks like. Prioritise these requirements ruthlessly or risk never being done. If it helps you can ask your stakeholders to order by priority, or select the 2-5 most important ones. At this moment you may realise you need extra team members with other skills.</li>
+<li><strong>Planning Stage</strong>: You’ve fully investigated the problem, now find one or two solutions that meet the requirements you have gathered. Plan what the work would look like, and share the ideas with stakeholders. Agree which solution to go with, what the MVP first deliverable should be, and when it needs to be done by.<br />
+</li>
+<li><strong>Building the MVP</strong>: This is your usual data science project steps. Each stage should have a customer check-in and I recommend having retrospectives every 2-4 weeks to nip issues in the bud:<br />
+7.1 Data collection<br />
+7.2 EDA<br />
+7.3 Data preparation<br />
+7.4 Model building<br />
+7.5 Tuning: The model may change a lot in the future so don’t waste too long on tuning for the first MVP<br />
+7.6 Deployment: Have it running somewhere shareable, and as above don’t spend too long here for the first MVP<br />
+</li>
+<li><strong>Show and tell with stakeholders</strong>: Have a wider show and tell to show them your work. This is needed to get the acceptance that you have met the requirements with your build.<br />
+</li>
+<li><strong>Re-planning for the next round of improvements</strong>: If stakeholders aren’t happy with the output, your next short sprint should be to rectify this. If they are happy but want the next stage, then plan the next features to add in the next MVP round. If your stakeholders are totally happy, then skip the next 2 stages.<br />
+</li>
+<li><strong>Build MVP + 1</strong>: Add the next round of improvements<br />
+</li>
+<li><strong>Build MVP + n</strong>: Continue improvements until you reach customer acceptance<br />
+</li>
+<li><strong>Finalize the Product</strong>: We are getting close, make your work production ready by adding testing, model monitoring, and full deployment set up.<br />
+</li>
+<li><strong>Tidying up</strong>: Review and update documentation and communicate your work via presentations to audiences outside your team to increase your impact</li>
+<li><strong>After-Care</strong>: Continue monitoring the model and if there are problems decide if they need to be a quick fix or another sprint of work. Check-in on use by the customer and consider if there are spin-out projects this piece of work has unearthed.</li>
+</ol>
 </div>
+<div id="tiny-team-planning" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Tiny team planning<a href="overall-framework.html#tiny-team-planning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For small project teams of one or two, maintaining a full Jira board and doing all Agile ceremonies is likely overkill. However, there is still some value in using the concepts in picking out the parts that work for you. For example keeping show-and-tell meetings with customers, a Jira board with a few broad tickets to record progress (and help with accountability), and weekly mini-retrospectives to take time to consider the week gone.</p>
+</div>
+<div id="your-turn" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Your turn<a href="overall-framework.html#your-turn" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>All these points are from trial and error, personal reading and learning from others around me and I hope it has given you a few ideas for your work. Many are obvious or common sense but in a rush to get going, they can accidentally be forgotten about to the project’s detriment. If you would like a thorough literature review Prince Canuma’s <a href="https://neptune.ai/blog/data-science-project-management">Data Science Project Management</a> is a brilliant look at all the options.</p>
+<p>Take the points from my rambling that would be helpful and try blending them with your current methods, see what works for you in practice. If you do things differently (or the same) let me know, I would love to add tips to this article and credit you! My github handle is <a href="https://github.com/rosenkavalier">rosenkavalier</a>.</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="agile-adaptations.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -176,7 +228,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-framework.Rmd",
 "text": "Edit"
 },
 "history": {

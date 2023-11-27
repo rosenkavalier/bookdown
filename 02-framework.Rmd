@@ -1,0 +1,34 @@
+# Overall framework
+
+## My way of working
+So now we have lots of thoughts about how to run a data science project. How do they work together? My preferred framework is:
+
+1. **Project Ideation**: A project is first mentioned or thought of by me/someone else. I consider it ideation the moment someone writes the idea down somewhere. This is now on your to-do list to look into in more depth.   
+2. **Mini-Discovery**: The next stage is a brief investigation by 1 person to check that the project has an audience, data to support it, and makes sense. Write a project objective statement about the why, what and risks with this work.  
+3. **Work approval**: Decide if it's worth proceeding with. This could be decided by you if you are in a position to do so, or a senior colleague.
+4. **Team-Kick Off Meeting**: Form a team with the skills you discovered you would need during the mini-discovery, and get to know them and their ways of working.     
+5. **Discovery Stage**: A more legit discovery stage. See details in previous sections, but get to know your customers, the problem, and the landscape. Use this to build user stories or a requirements list so you know what success looks like. Prioritise these requirements ruthlessly or risk never being done. If it helps you can ask your stakeholders to order by priority, or select the 2-5 most important ones. At this moment you may realise you need extra team members with other skills.
+6. **Planning Stage**: You've fully investigated the problem, now find one or two solutions that meet the requirements you have gathered. Plan what the work would look like, and share the ideas with stakeholders. Agree which solution to go with, what the MVP first deliverable should be, and when it needs to be done by.  
+7. **Building the MVP**: This is your usual data science project steps. Each stage should have a customer check-in and I recommend having retrospectives every 2-4 weeks to nip issues in the bud:  
+7.1 Data collection    
+7.2 EDA  
+7.3 Data preparation  
+7.4 Model building  
+7.5 Tuning: The model may change a lot in the future so don’t waste too long on tuning for the first MVP  
+7.6 Deployment: Have it running somewhere shareable, and as above don’t spend too long here for the first MVP  
+8. **Show and tell with stakeholders**: Have a wider show and tell to show them your work. This is needed to get the acceptance that you have met the requirements with your build.  
+9. **Re-planning for the next round of improvements**: If stakeholders aren't happy with the output, your next short sprint should be to rectify this. If they are happy but want the next stage, then plan the next features to add in the next MVP round. If your stakeholders are totally happy, then skip the next 2 stages.  
+10. **Build MVP + 1**: Add the next round of improvements  
+11. **Build MVP + n**: Continue improvements until you reach customer acceptance  
+12. **Finalize the Product**: We are getting close, make your work production ready by adding testing, model monitoring, and full deployment set up.  
+13. **Tidying up**: Review and update documentation and communicate your work via presentations to audiences outside your team to increase your impact
+14. **After-Care**: Continue monitoring the model and if there are problems decide if they need to be a quick fix or another sprint of work. Check-in on use by the customer and consider if there are spin-out projects this piece of work has unearthed.
+
+## Tiny team planning
+For small project teams of one or two, maintaining a full Jira board and doing all Agile ceremonies is likely overkill. However, there is still some value in using the concepts in picking out the parts that work for you. For example keeping show-and-tell meetings with customers, a Jira board with a few broad tickets to record progress (and help with accountability), and weekly mini-retrospectives to take time to consider the week gone.
+
+## Your turn
+All these points are from trial and error, personal reading and learning from others around me and I hope it has given you a few ideas for your work. Many are obvious or common sense but in a rush to get going, they can accidentally be forgotten about to the project's detriment. If you would like a thorough literature review Prince Canuma’s [Data Science Project Management](https://neptune.ai/blog/data-science-project-management) is a brilliant look at all the options.
+
+Take the points from my rambling that would be helpful and try blending them with your current methods, see what works for you in practice. If you do things differently (or the same) let me know, I would love to add tips to this article and credit you! My github handle is [rosenkavalier](https://github.com/rosenkavalier).
+
